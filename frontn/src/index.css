@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  background: linear-gradient(135deg, rgba(255, 0, 150, 0.5), rgba(0, 204, 255, 0.5)), url('backg.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+::-webkit-scrollbar {
+  width: 8px;  
+}
+
+::-webkit-scrollbar-track {
+  background: #2e2e2e; 
+  border-radius: 10px; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6b6b6b; 
+  border-radius: 10px; 
+  border: 3px solid #2e2e2e;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #0c0b0b; 
+}
