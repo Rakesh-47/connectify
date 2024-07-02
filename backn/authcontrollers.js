@@ -1,4 +1,4 @@
-import User from "../models/models.js"
+import User from "./models/models.js"
 import bcryptjs from "bcryptjs"
 import gencookie from "./tokengeneration.js"
 
