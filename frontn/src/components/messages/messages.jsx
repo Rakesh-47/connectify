@@ -2,10 +2,13 @@ import React, { useEffect, useRef } from "react";
 import Message from "./message.jsx";
 import userget from "../../hooks/usergetmessage.js";
 import Mgskeleton from "../skeletons/mgskeleton.jsx";
+import uselisten from "../../hooks/userlisten.js";
 
 const Messages = () => {
     const { messages, loading } = userget();
     const lastmsg = useRef();
+
+    uselisten()
 
     useEffect(() => {
         setTimeout(() => {

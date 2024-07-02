@@ -15,6 +15,8 @@ const Message=({message})=>{
    const profilepic= ch?authuser.profilepic:selectedConversation?.profilepic
    const bubblecol=ch?"bg-blue-500":"bg-gray-700"
 
+   const shakeclass=message.shake?"shake-horizontal":""
+
 
 
 
@@ -25,7 +27,7 @@ const Message=({message})=>{
                 <img  src ={profilepic} alt="none"/>
               </div>
             </div>
-        <div className={`chat-bubble text-white bg-blue-500 ${bubblecol}`}>{message.message}</div>
+        <div className={`chat-bubble text-white bg-blue-500 ${bubblecol} ${shakeclass}`}>{message.message}</div>
         <div className="chat-footer text-xs opacity-50 gap-1 items-center">{formattime}</div>
         </div>
     )

@@ -20,9 +20,7 @@ const Usersend = () => {
             }
 
             const data = await res.json();
-            console.log(data);
-
-            // Assuming `data` is the new message, append it to the messages
+            
             setMessages([...messages, data]);
 
         } catch (error) {

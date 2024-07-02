@@ -5,8 +5,8 @@ import Connection from "./db/mongo.js"
 import cookieParser from "cookie-parser";
 import messageroute from "./messageroute.js"
 import userroutes from "./userroutes.js"
+import { app, server } from "../socket/socket.js";
 
-const app=express();
 dotenv.config()
 const PORT=process.env.PORT
 
@@ -22,7 +22,7 @@ app.use("/api/auth",authRoutes)
 app.use("/api/messages",messageroute)
 app.use("/api/users",userroutes)
 
-app.listen(PORT,()=>{
+server.listen(PORT,()=>{
     Connection()
     console.log(`server running ${PORT}`)}
  )

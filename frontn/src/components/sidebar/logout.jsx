@@ -5,7 +5,6 @@ import uselogo from "../../hooks/userlogout";
 const Logout=()=>{
    
     const {loading,out}=uselogo()
-    console.log(out)
     return(
         <div className="mt-auto py-2">
         {!loading?(<BiLogOut className="w-6 h-6 text-white cursor-pointer" onClick={out}/> ) :(

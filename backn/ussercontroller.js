@@ -6,7 +6,6 @@ export const Getuser = async (req, res) => {
         const alluser = await User.find({ _id: { $ne: loggedin } }).select("-password")
         res.status(200).json(alluser)
     } catch (error) {
-        console.log("Error in getting user", error)
         res.status(500).json({ error: "Error in getting user" }) 
     }
 }
