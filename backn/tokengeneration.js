@@ -16,8 +16,7 @@ const gencookie = (userid, res) => {
 
         res.cookie("jwt", token, {
             httpOnly: true,
-            sameSite: "strict",
-            secure: process.env.NODE_ENV !== "development"
+            sameSite: "strict"
         });
 
     } catch (error) {
