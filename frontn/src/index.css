@@ -2,14 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-
-body {
-  background: linear-gradient(135deg, rgba(255, 0, 150, 0.5), rgba(0, 204, 255, 0.5)), url('../public/backg.webp');
+.background-container {
+  background: linear-gradient(135deg, #ff009680, #00ccff80), url(../public/backg.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  min-height: 100vh;
+  background-attachment: fixed; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; 
 }
+
 ::-webkit-scrollbar {
   width: 10px;
 }
