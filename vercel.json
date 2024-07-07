@@ -1,13 +1,16 @@
 {
     "version": 2,
+    
+    "rewrites": [
+      {
+        "source": "/(.*)",
+        "destination": "/frontn/dist/index.html"
+      }
+    ],
     "routes": [
       {
         "src": "/api/(.*)",
         "dest": "/backn/server.js"
-      },
-      {
-        "src": "/(.*)",
-        "dest": "/frontn/dist/index.html"
       }
     ]
   }
