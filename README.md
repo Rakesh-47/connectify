@@ -8,9 +8,9 @@
 
 > It is  a real time messaging platform thaat allows user to communicate and connect easily
 
-### 🏠 [Homepage](https://connectify-self.vercel.app/)
+### 🏠 [Homepage](https://connectify-1-72z7.onrender.com/login)
 
-### ✨ [Demo](https://connectify-self.vercel.app/)
+### ✨ [Demo](https://connectify-1-72z7.onrender.com/login)
 
 ## Usage
 
