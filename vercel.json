@@ -6,12 +6,6 @@
         "source": "/(.*)",
         "destination": "/frontn/dist/index.html"
       }
-    ],
-    "routes": [
-      {
-        "src": "/api/(.*)",
-        "dest": "/backn/server.js"
-      }
     ]
   }
   
