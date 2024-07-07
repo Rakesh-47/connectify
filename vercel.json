@@ -1,18 +1,5 @@
 {
     "version": 2,
-    "builds": [
-      {
-        "src": "frontn/package.json",
-        "use": "@vercel/static-build",
-        "config": {
-          "distDir": "frontn/dist"
-        }
-      },
-      {
-        "src": "backn/server.js",
-        "use": "@vercel/node"
-      }
-    ],
     "routes": [
       {
         "src": "/api/(.*)",
