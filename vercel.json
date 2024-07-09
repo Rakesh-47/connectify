@@ -1,22 +1,3 @@
 {
-  "routes": [
-    {
-      "src": "/api/auth/login",
-      "methods": ["POST"],
-      "headers": {
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Methods": "GET, POST",
-        "Access-Control-Allow-Headers": "Content-Type"
-      }
-    },
-    {
-      "src": "/api/*",
-      "dest": "/api/:splat",
-      "headers": {
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Methods": "GET, POST",
-        "Access-Control-Allow-Headers": "Content-Type"
-      }
-    }
-  ]
-}
+    "routes": [{ "src": "/[^.]+", "dest": "/", "status": 200 }]
+  }
