@@ -10,6 +10,7 @@ const io= new Server(server,{
     cors:{
         origin:["http://localhost:3000","https://connectify-dun.vercel.app/"],
         methods:["GET","POST"],
+        credentials:true
     }
 })
 
