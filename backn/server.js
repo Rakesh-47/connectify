@@ -20,18 +20,13 @@ app.use(cookieParser());
 app.use('/api/auth', authRoutes);
 app.use('/api/messages', messageroute);
 app.use('/api/users', userroutes);
-const allowedOrigins = ["http://localhost:3000", "https://connectify-dun.vercel.app"];
+
 
 app.use(cors({
-    origin: function (origin, callback) {
-        if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
-            callback(null, true);
-        } else {
-            callback(new Error('Not allowed by CORS'));
-        }
-    },
-    credentials: true
+  origin: "*",
+  credentials: true
 }));
+
 
 
 
