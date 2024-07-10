@@ -1,0 +1,16 @@
+{
+    "buildCommand": "cd frontn && npm install && npm run build",
+    "outputDirectory": "frontn/dist",
+    "framework": "vite",
+    "rewrites": [
+      {
+        "source": "/api/(.*)",
+        "destination": "/backn/server.js"
+      },
+      {
+        "source": "/(.*)",
+        "destination": "/frontn/dist/$1"
+      }
+    ]
+  }
+  
