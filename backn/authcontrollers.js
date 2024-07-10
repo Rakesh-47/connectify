@@ -54,7 +54,7 @@ export const login = async (req, res) => {
         }
 
         gencookie(user._id, res);
-        return res.status(201).json({
+         res.status(201).json({
             _id: user.id,
             fullname: user.fullname,
             username: user.username,
@@ -63,7 +63,7 @@ export const login = async (req, res) => {
         });
     } catch (error) {
         console.log("error during login", error);
-        return res.status(500).json({ error: "Internal server error" }); 
+        res.status(500).json({ error: "Internal server error" }); 
     }
 };
 
