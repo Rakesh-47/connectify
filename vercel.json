@@ -9,7 +9,7 @@
       },
       {
         "source": "/(.*)",
-        "destination": "/frontn/dist/$1"
+        "destination": "/frontn/dist/index.html"
       }
     ]
   }
