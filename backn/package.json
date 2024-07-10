@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "server": "nodemon backn/server.js",
-    "start": "node backn/server.js",
-    "build":"npm install && npm install --prefix frontn && npm run build --prefix frontn"
+    "server": "nodemon backn/server.js"
   },
   "type":"module",
   "keywords": [],
