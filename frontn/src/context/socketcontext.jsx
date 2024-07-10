@@ -19,7 +19,7 @@ export const SocketContextProvider=({children})=>{
     useEffect(()=>{
 
         if(authuser){
-            const socket=io("https://connectify-dun.vercel.app/",{
+            const socket=io("https://connectify-1-3470.onrender.com",{
                 query:{
                     userid:authuser._id
                 }
