@@ -22,6 +22,7 @@ app.use(cookieParser());
 app.use('/api/auth', authRoutes);
 app.use('/api/messages', messageroute);
 app.use('/api/users', userroutes);
+app.use(cors())
 
 app.get('/ch', (req, res) => {
   console.log("Hello");
