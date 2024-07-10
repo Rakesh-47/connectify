@@ -24,10 +24,6 @@ app.use('/api/messages', messageroute);
 app.use('/api/users', userroutes);
 app.use(cors())
 
-app.get('/ch', (req, res) => {
-  console.log("Hello");
-  res.status(200).json({ status: 'OK', message: 'Server is running fine' });
-});
 
 
 server.listen(PORT, () => {
