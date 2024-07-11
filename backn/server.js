@@ -11,11 +11,12 @@ import { app, server } from './socket/socket.js';
 
 dotenv.config();
 
-console.log(process.env.PORT)
+
+
 const PORT = process.env.PORT || 5000;
 
 
-
+const __path = path.resolve();
 app.use(express.json());
 app.use(cookieParser());
 
@@ -24,7 +25,11 @@ app.use('/api/messages', messageroute);
 app.use('/api/users', userroutes);
 app.use(cors())
 
+app.use(express.static(path.join(__path, "/frontn/dist")));
 
+app.get("*", (req, res) => {
+	res.sendFile(path.join(__path, "frontn", "dist", "index.html"));
+});
 
 server.listen(PORT, () => {
   Connection();
